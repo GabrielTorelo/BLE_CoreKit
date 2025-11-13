@@ -1,0 +1,79 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.xcworkspace
+
+# Archives & reports
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+*.xcresult
+*.log
+
+# Swift Package Manager
+.build/
+.swiftpm/cache/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Tools artifacts
+cpd-output.xml
+
+## SwiftyBeaver
+Hamew.beaver
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build/
+
+# Accio
+Dependencies/
+.accio/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/app_archive
+fastlane/readme.md
+
+# Code signing
+*.cer
+*.p12
+*.mobileprovision
+*.provisionprofile
+
+# Tools / IDEs
+.idea/
+.swiftlint.cache

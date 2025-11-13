@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0151AE7E2EBC2BA6006304E8 /* BLE_CoreKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0151AE7D2EBC2BA6006304E8 /* BLE_CoreKitApp.swift */; };
+		0151AE822EBC2BBB006304E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0151AE812EBC2BBB006304E8 /* Assets.xcassets */; };
+		0151AE852EBC2BBB006304E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0151AE842EBC2BBB006304E8 /* Preview Assets.xcassets */; };
+		016DB7042EC18F7E0064F00E /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7032EC18F7E0064F00E /* Device.swift */; };
+		016DB7062EC18FBD0064F00E /* BLEError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7052EC18FBD0064F00E /* BLEError.swift */; };
+		016DB7082EC18FE50064F00E /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7072EC18FE50064F00E /* DeviceService.swift */; };
+		016DB70A2EC190040064F00E /* BLECentralRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7092EC190040064F00E /* BLECentralRepositoryProtocol.swift */; };
+		016DB70C2EC190280064F00E /* BLEPeripheralRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB70B2EC190280064F00E /* BLEPeripheralRepositoryProtocol.swift */; };
+		016DB70E2EC190580064F00E /* BLEConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB70D2EC190580064F00E /* BLEConstants.swift */; };
+		016DB7102EC191040064F00E /* BLECentralRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB70F2EC191040064F00E /* BLECentralRepository.swift */; };
+		016DB7122EC191C90064F00E /* BLEPeripheralRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7112EC191C90064F00E /* BLEPeripheralRepository.swift */; };
+		016DB7142EC192650064F00E /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7132EC192650064F00E /* DependencyInjector.swift */; };
+		016DB7172EC192B60064F00E /* ScanForDevicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7162EC192B60064F00E /* ScanForDevicesUseCase.swift */; };
+		016DB7192EC192CD0064F00E /* ConnectToDeviceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7182EC192CD0064F00E /* ConnectToDeviceUseCase.swift */; };
+		016DB71B2EC192EF0064F00E /* ReadCharacteristicUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB71A2EC192EF0064F00E /* ReadCharacteristicUseCase.swift */; };
+		016DB71D2EC193050064F00E /* WriteCharacteristicUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB71C2EC193050064F00E /* WriteCharacteristicUseCase.swift */; };
+		016DB71F2EC193210064F00E /* SubscribeToCharacteristicUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB71E2EC193210064F00E /* SubscribeToCharacteristicUseCase.swift */; };
+		016DB7222EC193430064F00E /* StartAdvertisingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7212EC193430064F00E /* StartAdvertisingUseCase.swift */; };
+		016DB7242EC193570064F00E /* UpdateCharacteristicValueUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7232EC193570064F00E /* UpdateCharacteristicValueUseCase.swift */; };
+		016DB7262EC1938D0064F00E /* ModeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7252EC1938D0064F00E /* ModeSelectionView.swift */; };
+		016DB7292EC193BA0064F00E /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7282EC193BA0064F00E /* DeviceListViewModel.swift */; };
+		016DB72B2EC193EA0064F00E /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB72A2EC193EA0064F00E /* DeviceListView.swift */; };
+		016DB72E2EC194360064F00E /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB72D2EC194360064F00E /* DeviceDetailViewModel.swift */; };
+		016DB7302EC194680064F00E /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB72F2EC194680064F00E /* DeviceDetailView.swift */; };
+		016DB7322EC194BF0064F00E /* PeripheralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7312EC194BF0064F00E /* PeripheralViewModel.swift */; };
+		016DB7342EC194FE0064F00E /* PeripheralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7332EC194FE0064F00E /* PeripheralView.swift */; };
+		018B32052EC4CBEF00FDCCE7 /* ModeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B32042EC4CBEF00FDCCE7 /* ModeCardView.swift */; };
+		01D7B9AF2EC5237100B1BAF8 /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9AE2EC5237100B1BAF8 /* DeviceRowView.swift */; };
+		01D7B9B12EC523DB00B1BAF8 /* BluetoothStatusBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B02EC523DB00B1BAF8 /* BluetoothStatusBanner.swift */; };
+		01D7B9B42EC56BFE00B1BAF8 /* Device+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B32EC56BFD00B1BAF8 /* Device+Presentation.swift */; };
+		01D7B9B62EC5798F00B1BAF8 /* DeviceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B52EC5798F00B1BAF8 /* DeviceHeaderView.swift */; };
+		01D7B9B82EC607CC00B1BAF8 /* View+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B72EC607CB00B1BAF8 /* View+Keyboard.swift */; };
+		01DF91412EC610500078DBD4 /* StatusBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF91402EC610500078DBD4 /* StatusBanner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0151AE7A2EBC2BA6006304E8 /* BLE_CoreKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_CoreKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0151AE7D2EBC2BA6006304E8 /* BLE_CoreKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_CoreKitApp.swift; sourceTree = "<group>"; };
+		0151AE812EBC2BBB006304E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0151AE842EBC2BBB006304E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		016DB7032EC18F7E0064F00E /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		016DB7052EC18FBD0064F00E /* BLEError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEError.swift; sourceTree = "<group>"; };
+		016DB7072EC18FE50064F00E /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		016DB7092EC190040064F00E /* BLECentralRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralRepositoryProtocol.swift; sourceTree = "<group>"; };
+		016DB70B2EC190280064F00E /* BLEPeripheralRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralRepositoryProtocol.swift; sourceTree = "<group>"; };
+		016DB70D2EC190580064F00E /* BLEConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConstants.swift; sourceTree = "<group>"; };
+		016DB70F2EC191040064F00E /* BLECentralRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralRepository.swift; sourceTree = "<group>"; };
+		016DB7112EC191C90064F00E /* BLEPeripheralRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralRepository.swift; sourceTree = "<group>"; };
+		016DB7132EC192650064F00E /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		016DB7162EC192B60064F00E /* ScanForDevicesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanForDevicesUseCase.swift; sourceTree = "<group>"; };
+		016DB7182EC192CD0064F00E /* ConnectToDeviceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToDeviceUseCase.swift; sourceTree = "<group>"; };
+		016DB71A2EC192EF0064F00E /* ReadCharacteristicUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCharacteristicUseCase.swift; sourceTree = "<group>"; };
+		016DB71C2EC193050064F00E /* WriteCharacteristicUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCharacteristicUseCase.swift; sourceTree = "<group>"; };
+		016DB71E2EC193210064F00E /* SubscribeToCharacteristicUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeToCharacteristicUseCase.swift; sourceTree = "<group>"; };
+		016DB7212EC193430064F00E /* StartAdvertisingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAdvertisingUseCase.swift; sourceTree = "<group>"; };
+		016DB7232EC193570064F00E /* UpdateCharacteristicValueUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCharacteristicValueUseCase.swift; sourceTree = "<group>"; };
+		016DB7252EC1938D0064F00E /* ModeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectionView.swift; sourceTree = "<group>"; };
+		016DB7282EC193BA0064F00E /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		016DB72A2EC193EA0064F00E /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		016DB72D2EC194360064F00E /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
+		016DB72F2EC194680064F00E /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		016DB7312EC194BF0064F00E /* PeripheralViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewModel.swift; sourceTree = "<group>"; };
+		016DB7332EC194FE0064F00E /* PeripheralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralView.swift; sourceTree = "<group>"; };
+		018B32042EC4CBEF00FDCCE7 /* ModeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCardView.swift; sourceTree = "<group>"; };
+		01D7B9AE2EC5237100B1BAF8 /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
+		01D7B9B02EC523DB00B1BAF8 /* BluetoothStatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothStatusBanner.swift; sourceTree = "<group>"; };
+		01D7B9B32EC56BFD00B1BAF8 /* Device+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Presentation.swift"; sourceTree = "<group>"; };
+		01D7B9B52EC5798F00B1BAF8 /* DeviceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHeaderView.swift; sourceTree = "<group>"; };
+		01D7B9B72EC607CB00B1BAF8 /* View+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Keyboard.swift"; sourceTree = "<group>"; };
+		01DF91402EC610500078DBD4 /* StatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBanner.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0151AE772EBC2BA5006304E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0151AE712EBC2BA5006304E8 = {
+			isa = PBXGroup;
+			children = (
+				0151AE7C2EBC2BA6006304E8 /* BLE_CoreKit */,
+				0151AE7B2EBC2BA6006304E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0151AE7B2EBC2BA6006304E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0151AE7A2EBC2BA6006304E8 /* BLE_CoreKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0151AE7C2EBC2BA6006304E8 /* BLE_CoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				0151AE942EC1736B006304E8 /* Presentation */,
+				0151AE912EC1730A006304E8 /* Infrastructure */,
+				0151AE8F2EC172BC006304E8 /* Application */,
+				0151AE8C2EBC2FC8006304E8 /* Domain */,
+				0151AE7D2EBC2BA6006304E8 /* BLE_CoreKitApp.swift */,
+				0151AE812EBC2BBB006304E8 /* Assets.xcassets */,
+				0151AE832EBC2BBB006304E8 /* Preview Content */,
+			);
+			path = BLE_CoreKit;
+			sourceTree = "<group>";
+		};
+		0151AE832EBC2BBB006304E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0151AE842EBC2BBB006304E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0151AE8C2EBC2FC8006304E8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0151AE8E2EBC30F7006304E8 /* Repositories */,
+				0151AE8D2EBC30C5006304E8 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0151AE8D2EBC30C5006304E8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7032EC18F7E0064F00E /* Device.swift */,
+				016DB7052EC18FBD0064F00E /* BLEError.swift */,
+				016DB7072EC18FE50064F00E /* DeviceService.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0151AE8E2EBC30F7006304E8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7092EC190040064F00E /* BLECentralRepositoryProtocol.swift */,
+				016DB70B2EC190280064F00E /* BLEPeripheralRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0151AE8F2EC172BC006304E8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0151AE902EC172CD006304E8 /* UseCases */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0151AE902EC172CD006304E8 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7202EC193320064F00E /* Peripheral */,
+				016DB7152EC192A50064F00E /* Central */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0151AE912EC1730A006304E8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0151AE932EC17360006304E8 /* DI */,
+				0151AE922EC1733D006304E8 /* Bluetooth */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0151AE922EC1733D006304E8 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				016DB70D2EC190580064F00E /* BLEConstants.swift */,
+				016DB70F2EC191040064F00E /* BLECentralRepository.swift */,
+				016DB7112EC191C90064F00E /* BLEPeripheralRepository.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		0151AE932EC17360006304E8 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7132EC192650064F00E /* DependencyInjector.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		0151AE942EC1736B006304E8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				01D7B9B22EC56BBF00B1BAF8 /* Extensions */,
+				0151AE972EC173A4006304E8 /* Peripheral */,
+				0151AE962EC1739C006304E8 /* Central */,
+				0151AE952EC17394006304E8 /* Common */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0151AE952EC17394006304E8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7252EC1938D0064F00E /* ModeSelectionView.swift */,
+				018B32042EC4CBEF00FDCCE7 /* ModeCardView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0151AE962EC1739C006304E8 /* Central */ = {
+			isa = PBXGroup;
+			children = (
+				016DB72C2EC194280064F00E /* DeviceDetail */,
+				016DB7272EC193AC0064F00E /* DeviceList */,
+			);
+			path = Central;
+			sourceTree = "<group>";
+		};
+		0151AE972EC173A4006304E8 /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7312EC194BF0064F00E /* PeripheralViewModel.swift */,
+				016DB7332EC194FE0064F00E /* PeripheralView.swift */,
+				01DF91402EC610500078DBD4 /* StatusBanner.swift */,
+			);
+			path = Peripheral;
+			sourceTree = "<group>";
+		};
+		016DB7152EC192A50064F00E /* Central */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7162EC192B60064F00E /* ScanForDevicesUseCase.swift */,
+				016DB7182EC192CD0064F00E /* ConnectToDeviceUseCase.swift */,
+				016DB71A2EC192EF0064F00E /* ReadCharacteristicUseCase.swift */,
+				016DB71C2EC193050064F00E /* WriteCharacteristicUseCase.swift */,
+				016DB71E2EC193210064F00E /* SubscribeToCharacteristicUseCase.swift */,
+			);
+			path = Central;
+			sourceTree = "<group>";
+		};
+		016DB7202EC193320064F00E /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7212EC193430064F00E /* StartAdvertisingUseCase.swift */,
+				016DB7232EC193570064F00E /* UpdateCharacteristicValueUseCase.swift */,
+			);
+			path = Peripheral;
+			sourceTree = "<group>";
+		};
+		016DB7272EC193AC0064F00E /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				016DB7282EC193BA0064F00E /* DeviceListViewModel.swift */,
+				016DB72A2EC193EA0064F00E /* DeviceListView.swift */,
+				01D7B9AE2EC5237100B1BAF8 /* DeviceRowView.swift */,
+				01D7B9B02EC523DB00B1BAF8 /* BluetoothStatusBanner.swift */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		016DB72C2EC194280064F00E /* DeviceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				016DB72D2EC194360064F00E /* DeviceDetailViewModel.swift */,
+				016DB72F2EC194680064F00E /* DeviceDetailView.swift */,
+				01D7B9B52EC5798F00B1BAF8 /* DeviceHeaderView.swift */,
+			);
+			path = DeviceDetail;
+			sourceTree = "<group>";
+		};
+		01D7B9B22EC56BBF00B1BAF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01D7B9B32EC56BFD00B1BAF8 /* Device+Presentation.swift */,
+				01D7B9B72EC607CB00B1BAF8 /* View+Keyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0151AE792EBC2BA5006304E8 /* BLE_CoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0151AE882EBC2BBB006304E8 /* Build configuration list for PBXNativeTarget "BLE_CoreKit" */;
+			buildPhases = (
+				0151AE762EBC2BA5006304E8 /* Sources */,
+				0151AE772EBC2BA5006304E8 /* Frameworks */,
+				0151AE782EBC2BA5006304E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLE_CoreKit;
+			productName = BLE_CoreKit;
+			productReference = 0151AE7A2EBC2BA6006304E8 /* BLE_CoreKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0151AE722EBC2BA5006304E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0151AE792EBC2BA5006304E8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0151AE752EBC2BA5006304E8 /* Build configuration list for PBXProject "BLE_CoreKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0151AE712EBC2BA5006304E8;
+			productRefGroup = 0151AE7B2EBC2BA6006304E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0151AE792EBC2BA5006304E8 /* BLE_CoreKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0151AE782EBC2BA5006304E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0151AE852EBC2BBB006304E8 /* Preview Assets.xcassets in Resources */,
+				0151AE822EBC2BBB006304E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0151AE762EBC2BA5006304E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016DB7262EC1938D0064F00E /* ModeSelectionView.swift in Sources */,
+				016DB7062EC18FBD0064F00E /* BLEError.swift in Sources */,
+				016DB72B2EC193EA0064F00E /* DeviceListView.swift in Sources */,
+				01D7B9AF2EC5237100B1BAF8 /* DeviceRowView.swift in Sources */,
+				016DB7192EC192CD0064F00E /* ConnectToDeviceUseCase.swift in Sources */,
+				01D7B9B62EC5798F00B1BAF8 /* DeviceHeaderView.swift in Sources */,
+				016DB71D2EC193050064F00E /* WriteCharacteristicUseCase.swift in Sources */,
+				016DB7102EC191040064F00E /* BLECentralRepository.swift in Sources */,
+				01D7B9B42EC56BFE00B1BAF8 /* Device+Presentation.swift in Sources */,
+				016DB71F2EC193210064F00E /* SubscribeToCharacteristicUseCase.swift in Sources */,
+				016DB7172EC192B60064F00E /* ScanForDevicesUseCase.swift in Sources */,
+				016DB7322EC194BF0064F00E /* PeripheralViewModel.swift in Sources */,
+				016DB72E2EC194360064F00E /* DeviceDetailViewModel.swift in Sources */,
+				016DB71B2EC192EF0064F00E /* ReadCharacteristicUseCase.swift in Sources */,
+				016DB70A2EC190040064F00E /* BLECentralRepositoryProtocol.swift in Sources */,
+				0151AE7E2EBC2BA6006304E8 /* BLE_CoreKitApp.swift in Sources */,
+				016DB70C2EC190280064F00E /* BLEPeripheralRepositoryProtocol.swift in Sources */,
+				016DB7342EC194FE0064F00E /* PeripheralView.swift in Sources */,
+				016DB7292EC193BA0064F00E /* DeviceListViewModel.swift in Sources */,
+				01DF91412EC610500078DBD4 /* StatusBanner.swift in Sources */,
+				01D7B9B82EC607CC00B1BAF8 /* View+Keyboard.swift in Sources */,
+				016DB7242EC193570064F00E /* UpdateCharacteristicValueUseCase.swift in Sources */,
+				016DB7042EC18F7E0064F00E /* Device.swift in Sources */,
+				01D7B9B12EC523DB00B1BAF8 /* BluetoothStatusBanner.swift in Sources */,
+				018B32052EC4CBEF00FDCCE7 /* ModeCardView.swift in Sources */,
+				016DB7142EC192650064F00E /* DependencyInjector.swift in Sources */,
+				016DB7302EC194680064F00E /* DeviceDetailView.swift in Sources */,
+				016DB7122EC191C90064F00E /* BLEPeripheralRepository.swift in Sources */,
+				016DB7082EC18FE50064F00E /* DeviceService.swift in Sources */,
+				016DB70E2EC190580064F00E /* BLEConstants.swift in Sources */,
+				016DB7222EC193430064F00E /* StartAdvertisingUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0151AE862EBC2BBB006304E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0151AE872EBC2BBB006304E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0151AE892EBC2BBB006304E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BLE_CoreKit/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "O app usa o Bluetooth para encontrar e configurar dispositivos proximos";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "O app usa o Bluetooth para simular um dispositivo e ser descoberto por outros";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabriel-torelo.BLE-CoreKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0151AE8A2EBC2BBB006304E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BLE_CoreKit/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "O app usa o Bluetooth para encontrar e configurar dispositivos proximos";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "O app usa o Bluetooth para simular um dispositivo e ser descoberto por outros";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabriel-torelo.BLE-CoreKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0151AE752EBC2BA5006304E8 /* Build configuration list for PBXProject "BLE_CoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0151AE862EBC2BBB006304E8 /* Debug */,
+				0151AE872EBC2BBB006304E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0151AE882EBC2BBB006304E8 /* Build configuration list for PBXNativeTarget "BLE_CoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0151AE892EBC2BBB006304E8 /* Debug */,
+				0151AE8A2EBC2BBB006304E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0151AE722EBC2BA5006304E8 /* Project object */;
+}
