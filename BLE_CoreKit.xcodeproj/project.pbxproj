@@ -33,6 +33,13 @@
 		016DB7302EC194680064F00E /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB72F2EC194680064F00E /* DeviceDetailView.swift */; };
 		016DB7322EC194BF0064F00E /* PeripheralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7312EC194BF0064F00E /* PeripheralViewModel.swift */; };
 		016DB7342EC194FE0064F00E /* PeripheralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DB7332EC194FE0064F00E /* PeripheralView.swift */; };
+		018B32052EC4CBEF00FDCCE7 /* ModeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B32042EC4CBEF00FDCCE7 /* ModeCardView.swift */; };
+		01D7B9AF2EC5237100B1BAF8 /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9AE2EC5237100B1BAF8 /* DeviceRowView.swift */; };
+		01D7B9B12EC523DB00B1BAF8 /* BluetoothStatusBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B02EC523DB00B1BAF8 /* BluetoothStatusBanner.swift */; };
+		01D7B9B42EC56BFE00B1BAF8 /* Device+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B32EC56BFD00B1BAF8 /* Device+Presentation.swift */; };
+		01D7B9B62EC5798F00B1BAF8 /* DeviceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B52EC5798F00B1BAF8 /* DeviceHeaderView.swift */; };
+		01D7B9B82EC607CC00B1BAF8 /* View+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7B9B72EC607CB00B1BAF8 /* View+Keyboard.swift */; };
+		01DF91412EC610500078DBD4 /* StatusBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF91402EC610500078DBD4 /* StatusBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,13 @@
 		016DB72F2EC194680064F00E /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
 		016DB7312EC194BF0064F00E /* PeripheralViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewModel.swift; sourceTree = "<group>"; };
 		016DB7332EC194FE0064F00E /* PeripheralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralView.swift; sourceTree = "<group>"; };
+		018B32042EC4CBEF00FDCCE7 /* ModeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCardView.swift; sourceTree = "<group>"; };
+		01D7B9AE2EC5237100B1BAF8 /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
+		01D7B9B02EC523DB00B1BAF8 /* BluetoothStatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothStatusBanner.swift; sourceTree = "<group>"; };
+		01D7B9B32EC56BFD00B1BAF8 /* Device+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Presentation.swift"; sourceTree = "<group>"; };
+		01D7B9B52EC5798F00B1BAF8 /* DeviceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHeaderView.swift; sourceTree = "<group>"; };
+		01D7B9B72EC607CB00B1BAF8 /* View+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Keyboard.swift"; sourceTree = "<group>"; };
+		01DF91402EC610500078DBD4 /* StatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +203,7 @@
 		0151AE942EC1736B006304E8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				01D7B9B22EC56BBF00B1BAF8 /* Extensions */,
 				0151AE972EC173A4006304E8 /* Peripheral */,
 				0151AE962EC1739C006304E8 /* Central */,
 				0151AE952EC17394006304E8 /* Common */,
@@ -200,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				016DB7252EC1938D0064F00E /* ModeSelectionView.swift */,
+				018B32042EC4CBEF00FDCCE7 /* ModeCardView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -218,6 +234,7 @@
 			children = (
 				016DB7312EC194BF0064F00E /* PeripheralViewModel.swift */,
 				016DB7332EC194FE0064F00E /* PeripheralView.swift */,
+				01DF91402EC610500078DBD4 /* StatusBanner.swift */,
 			);
 			path = Peripheral;
 			sourceTree = "<group>";
@@ -248,6 +265,8 @@
 			children = (
 				016DB7282EC193BA0064F00E /* DeviceListViewModel.swift */,
 				016DB72A2EC193EA0064F00E /* DeviceListView.swift */,
+				01D7B9AE2EC5237100B1BAF8 /* DeviceRowView.swift */,
+				01D7B9B02EC523DB00B1BAF8 /* BluetoothStatusBanner.swift */,
 			);
 			path = DeviceList;
 			sourceTree = "<group>";
@@ -257,8 +276,18 @@
 			children = (
 				016DB72D2EC194360064F00E /* DeviceDetailViewModel.swift */,
 				016DB72F2EC194680064F00E /* DeviceDetailView.swift */,
+				01D7B9B52EC5798F00B1BAF8 /* DeviceHeaderView.swift */,
 			);
 			path = DeviceDetail;
+			sourceTree = "<group>";
+		};
+		01D7B9B22EC56BBF00B1BAF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01D7B9B32EC56BFD00B1BAF8 /* Device+Presentation.swift */,
+				01D7B9B72EC607CB00B1BAF8 /* View+Keyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +363,12 @@
 				016DB7262EC1938D0064F00E /* ModeSelectionView.swift in Sources */,
 				016DB7062EC18FBD0064F00E /* BLEError.swift in Sources */,
 				016DB72B2EC193EA0064F00E /* DeviceListView.swift in Sources */,
+				01D7B9AF2EC5237100B1BAF8 /* DeviceRowView.swift in Sources */,
 				016DB7192EC192CD0064F00E /* ConnectToDeviceUseCase.swift in Sources */,
+				01D7B9B62EC5798F00B1BAF8 /* DeviceHeaderView.swift in Sources */,
 				016DB71D2EC193050064F00E /* WriteCharacteristicUseCase.swift in Sources */,
 				016DB7102EC191040064F00E /* BLECentralRepository.swift in Sources */,
+				01D7B9B42EC56BFE00B1BAF8 /* Device+Presentation.swift in Sources */,
 				016DB71F2EC193210064F00E /* SubscribeToCharacteristicUseCase.swift in Sources */,
 				016DB7172EC192B60064F00E /* ScanForDevicesUseCase.swift in Sources */,
 				016DB7322EC194BF0064F00E /* PeripheralViewModel.swift in Sources */,
@@ -347,8 +379,12 @@
 				016DB70C2EC190280064F00E /* BLEPeripheralRepositoryProtocol.swift in Sources */,
 				016DB7342EC194FE0064F00E /* PeripheralView.swift in Sources */,
 				016DB7292EC193BA0064F00E /* DeviceListViewModel.swift in Sources */,
+				01DF91412EC610500078DBD4 /* StatusBanner.swift in Sources */,
+				01D7B9B82EC607CC00B1BAF8 /* View+Keyboard.swift in Sources */,
 				016DB7242EC193570064F00E /* UpdateCharacteristicValueUseCase.swift in Sources */,
 				016DB7042EC18F7E0064F00E /* Device.swift in Sources */,
+				01D7B9B12EC523DB00B1BAF8 /* BluetoothStatusBanner.swift in Sources */,
+				018B32052EC4CBEF00FDCCE7 /* ModeCardView.swift in Sources */,
 				016DB7142EC192650064F00E /* DependencyInjector.swift in Sources */,
 				016DB7302EC194680064F00E /* DeviceDetailView.swift in Sources */,
 				016DB7122EC191C90064F00E /* BLEPeripheralRepository.swift in Sources */,
